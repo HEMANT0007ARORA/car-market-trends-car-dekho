@@ -1,81 +1,105 @@
-# Car Market Trends Analysis — Car Dekho
+# 🚗 Car Market Trends Analysis — Car Dekho
 
-A data-analysis case study based on the supplied **Car Dekho** dataset.
+A data analysis case study using the **Car Dekho vehicle dataset** to explore used-vehicle pricing, depreciation, vehicle characteristics, and market trends with Python.
 
-## Project objective
+## 📌 Project Overview
 
-Analyze used-vehicle records to understand:
+This project analyzes a dataset containing used-vehicle records and answers the 25 questions provided in the original Car Dekho data-analysis case study.
 
-- manufacturing-year coverage
-- selling-price range
-- dataset size and missing values
-- vehicle/model frequency
-- fuel, seller and transmission mix
-- depreciation and resale retention
-- relationship between selling price, vehicle age/year and kilometres driven
-- separate two-wheeler and car insights
-- answers to the 25 questions in the original case study
+The analysis focuses on:
 
-## Tools
+- Manufacturing-year trends
+- Selling-price and present-price analysis
+- Vehicle/model frequency
+- Fuel-type distribution
+- Seller and transmission patterns
+- Vehicle ownership
+- Depreciation
+- Relationship between vehicle age, kilometres driven, and selling price
+- Separate analysis of cars and two-wheelers
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- PowerPoint
+## 🎯 Business Questions
 
-## Dataset snapshot
+The project investigates questions such as:
 
-The supplied dataset contains **301 records and 9 original columns**. The source notebook shows:
+- What manufacturing years are represented?
+- What are the minimum and maximum selling prices?
+- How many records are present?
+- Are there missing values?
+- How many unique vehicle models are present?
+- Which vehicle is most frequently listed?
+- How many CNG vehicles are present?
+- How many vehicles are sold directly by individuals?
+- How many automatic-transmission vehicles are present?
+- Which vehicles have the highest and lowest depreciation?
+- Which brands/models are less affected by depreciation?
+- Does vehicle age or kilometres driven affect selling price?
+- How many newer vehicles are present?
+- What can be learned specifically about two-wheelers and cars?
 
-- manufacturing years: **2003–2018**
-- selling price: **₹0.10 lakh–₹35.00 lakh**
-- present price: **₹0.32 lakh–₹92.60 lakh**
-- kilometres driven: **500–500,000**
-- missing values: **0**
-- unique vehicle models: **98**
-- fuel types: Petrol 239, Diesel 60, CNG 2
-- most frequent model: **City (26 records)**
+## 📊 Dataset
 
-> Note: “98 different vehicles” in the original notebook is interpreted here as **98 unique vehicle models**, because the dataset includes cars, bikes and mopeds.
+| Attribute | Value |
+|---|---:|
+| Records | 301 |
+| Original columns | 9 |
+| Manufacturing years | 2003–2018 |
+| Minimum selling price | ₹0.10 lakh |
+| Maximum selling price | ₹35.00 lakh |
+| Minimum kilometres driven | 500 |
+| Maximum kilometres driven | 500,000 |
+| Missing values | 0 |
+| Unique vehicle models | 98 |
 
-## Repository structure
+### Main columns
 
-```text
-car-market-trends-car-dekho/
-├── analysis.py
-├── requirements.txt
-├── data/
-│   └── car_data.csv
-├── notebook/
-│   └── Car_Market_Trends_Analysis.ipynb
-├── outputs/
-│   └── charts/
-├── presentation/
-│   └── Car_Market_Trends_Analysis_Car_Dekho.pptx
-└── screenshots/
-    └── jupyter_analysis_*.png
-```
+- `Car_Name`
+- `Year`
+- `Selling_Price`
+- `Present_Price`
+- `Kms_Driven`
+- `Fuel_Type`
+- `Seller_Type`
+- `Transmission`
+- `Owner`
 
-## Run locally
+> **Note:** The original notebook describes 98 “different vehicles”. Here this is presented as **98 unique vehicle models**, because the dataset contains cars as well as two-wheelers.
 
-```bash
-pip install -r requirements.txt
-python analysis.py
-```
+## 🔎 Key Findings
 
-Or open the notebook:
+### Fuel Type
 
-```bash
-jupyter notebook notebook/Car_Market_Trends_Analysis.ipynb
-```
+The supplied analysis reports:
 
-## Presentation
+- Petrol: **239**
+- Diesel: **60**
+- CNG: **2**
 
-The `presentation/` folder contains the final case-study PPT covering the problem statement, methodology, analysis, visualizations, 25 case-study answers and conclusion.
+Petrol vehicles dominate the dataset.
 
-## Data provenance
+### Vehicle Models
 
-The CSV and Jupyter screenshots in this repository are the materials supplied for the case-study assignment. Analysis and presentation outputs were created from those materials.
+There are **98 unique vehicle models**.
+
+The most frequently occurring model is:
+
+**City — 26 records**
+
+### Data Quality
+
+The analysis confirms:
+
+- 301 non-null records across the original columns
+- No missing/null values
+
+## 📉 Depreciation Analysis
+
+Depreciation is calculated as:
+
+```python
+Depreciation = Present_Price - Selling_Price
+
+Resale retention is calculated as:
+
+```python
+Retention = Selling_Price / Present_Price
