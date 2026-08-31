@@ -98,8 +98,3 @@ Depreciation is calculated as:
 
 ```python
 Depreciation = Present_Price - Selling_Price
-
-Resale retention is calculated as:
-
-```python
-Retention = Selling_Price / Present_Price
