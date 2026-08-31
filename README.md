@@ -92,25 +92,25 @@ The analysis confirms:
 - 301 non-null records across the original columns
 - No missing/null values
 
-## 📉 Depreciation Analysis
+📉 Depreciation Analysis
 
 Depreciation is calculated as:
 
 ```python
 Depreciation = Present_Price - Selling_Price
 
-### Then save and push
+Then save and push
 
 In PowerShell:
 ...
 
-## 📚 Project Type
+📚 Project Type
 
-**Data Analysis / Exploratory Data Analysis (EDA)**
+Data Analysis / Exploratory Data Analysis (EDA)**
 
 This project was developed as a Car Dekho data-analysis case study using the supplied dataset and original case-study questions.
 
-## 👤 Author
+👤 Author
 
 **Hemant Arora**
 
