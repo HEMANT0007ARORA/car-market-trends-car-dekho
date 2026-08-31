@@ -98,7 +98,8 @@ Depreciation is calculated as:
 
 ```python
 Depreciation = Present_Price - Selling_Price
-
+```
+These measures help compare the value retained by vehicles relative to their present price.
 Then save and push
 
 In PowerShell:
