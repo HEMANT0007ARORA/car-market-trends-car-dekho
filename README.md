@@ -98,3 +98,24 @@ Depreciation is calculated as:
 
 ```python
 Depreciation = Present_Price - Selling_Price
+
+### Then save and push
+
+In PowerShell:
+...
+
+## 📚 Project Type
+
+**Data Analysis / Exploratory Data Analysis (EDA)**
+
+This project was developed as a Car Dekho data-analysis case study using the supplied dataset and original case-study questions.
+
+## 👤 Author
+
+**Hemant Arora**
+
+GitHub: [HEMANT0007ARORA](https://github.com/HEMANT0007ARORA)
+
+---
+
+⭐ Explore the notebook, analysis script and generated charts to understand the complete analysis.
